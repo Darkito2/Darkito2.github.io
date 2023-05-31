@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Empresa de Autos</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .car-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    
+    .car-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      background-color: #f9f9f9;
+      height: 300px; /* Establece una altura fija */
+    }
+    
+    .car-card img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+      transition: transform 0.3s;
+    }
+    
+    .car-card img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Empresa de Autos</h1>
+  </header>
+  
+  <div class="container">
+    <h2>La elegancia de los autos</h2>
+    <p>Los autos son vehículos diseñados para brindar comodidad, estilo y elegancia en el transporte. Se han convertido en una parte esencial de nuestra vida cotidiana, ofreciendo una forma conveniente y sofisticada de desplazarse.</p>
+    
+    <h2>Nuestros Autos</h2>
+    <div class="car-list">
+      <div class="car-card">
+        <img src="Imagenes/El Audi R8 Panther 2.jpg" alt="Auto 1">
+        <h3>Auto 1</h3>
+        <p>Audi R8 Panther</p>
+      </div>
+      <div class="car-card">
+        <img src="Imagenes/Mustang Shelby GT500 3.jpg" alt="Auto 2">
+        <h3>Auto 2</h3>
+        <p>Mustang Shelby GT500</p>
+      </div>
+      <div class="car-card">
+        <img src="Imagenes/Nissan Sentra 1.jpg" alt="Auto 3">
+        <h3>Auto 3</h3>
+        <p>Nissan Sentra</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
